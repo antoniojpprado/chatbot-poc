@@ -16,6 +16,14 @@
 
 Este projeto tem por objetivo realizar exercícios e demonstrar o uso dos recursos de um bot  para que com o conhecimento e domínio da técnica possa se fazer o uso em casos reais.
 
+Recursos explorados:
+
+- Diálogos
+- Utilização de botões
+- Utilização de emojis
+- Utilização de formulários.
+- Transferência entre canais de atendimento.
+
 ## ✅ Tecnologias
 
 As seguintes ferramentas foram, as principais, usadas na construção do projeto:
@@ -79,6 +87,7 @@ pip3 install -r requirements.txt
 ### Ngrok
 
 Caso queira que os bots rodem em um aplicativo de midia social, tal qual o [Telegram](https://telegram.org/), será necessário ativarmos o servidor web [ngrok](https://ngrok.com/), se não for o caso, pode saltar este tópico.
+
 Para isto, ative o ngrok, com o seguinte comando:
 
 ```bash
@@ -113,7 +122,9 @@ ngrok http 5005
 ### Bots
 
 Teremos que executar os 3 bots, cada um em uma porta diferente, assim como as respectivas actions, também em portas diferentes.
+
 Sendo o primeiro acesso, após a clonagem do projeto, faz-se necessário realizarmos o treinamentos dos bots.
+
 Para isto, acessaremos cada um dos 3 diretórios dos Bots e os levantaremos individualmente.
 
 ### Bot HelpDesk
