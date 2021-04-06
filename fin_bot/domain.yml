@@ -1,0 +1,40 @@
+version: "2.0"
+
+intents:
+  - deny
+  - greet
+  - handoff
+  - human_handoff
+  - trigger_handoff
+
+entities:
+  - handoff_to
+
+slots:
+  handoff_to:
+    type: any
+    influence_conversation: false
+    
+responses:
+  utter_greet:
+  - text: "Olá! Sou seu Assistente Finaneiro."
+  utter_help:
+  - text: "Posso te ajudar com:"
+  utter_ask_handoff:
+  - text: Parece que você deseja ser transferido para um agente humano.
+  utter_handoff:
+  - text: Esta bem, transferindo ...
+  utter_wouldve_handed_off:
+  - text: Se você estivesse falando comigo via chat, eu o teria encaminhado para {handoffhost}.
+  utter_no_handoff:
+  - text: Como você não configurou um host para entregar, não posso enviar você a lugar nenhum!
+  utter_ask_whatelse:
+  - text: Em que mais posso ajudá-lo?
+
+actions:
+- action_handoff
+- action_handoff_options
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

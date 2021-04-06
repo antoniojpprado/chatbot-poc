@@ -1,0 +1,7 @@
+handoff_hosts:
+    adm:
+      title: "Assistente Administrativo"
+      url: "http://localhost:5007"
+    help:
+      title: "Assistente Helpdesk"
+      url: "http://localhost:5005"

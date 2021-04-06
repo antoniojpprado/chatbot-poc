@@ -1,0 +1,7 @@
+version: "2.0"
+rules:
+  - rule: a intenção de transferência de outro bot aciona a saudação
+    steps:
+    - intent: handoff
+    - action: utter_greet
+    - action: action_handoff_options

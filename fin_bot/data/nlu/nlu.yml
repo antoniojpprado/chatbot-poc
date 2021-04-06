@@ -1,0 +1,37 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - beleza
+    - bom dia
+    - boa tarde
+    - boa noite
+    - e ai
+    - fala
+    - oi
+    - ola
+    - opa
+    - tudo bem
+    - tudo bom
+- intent: human_handoff
+  examples: |
+    - humano
+    - Eu quero um humano
+    - posso falar com um agente
+    - agente real por favor
+    - humano real
+    - conversar com um agente ao vivo
+    - me dê uma pessoa por favor
+    - eu quero falar com um humano
+    - você pode me transferir para um humano?
+    - não interferir
+    - fale com um humano
+    - eu preciso falar com um humano
+    - humano por favor
+    - eu preciso da ajuda de um humano
+    - eu preciso da ajuda de um humano real
+    - me dê um humano
+    - eu quero falar com um humano
+    - eu quero um representante
+    - quero falar com uma pessoa

@@ -1,0 +1,112 @@
+version: "2.0"
+
+intents:
+  - request_register_datas:
+      use_entities: []
+  - inform
+  - affirm
+  - deny
+  - stop
+  - thankyou
+  - greet
+  - bot_challenge
+  - handoff
+  - inform_handoff
+  - trigger_handoff
+  - inform_datas
+  
+entities:
+  - cuisine
+  - number
+  - feedback
+  - seating
+  - handoff_to
+  - data_name
+  - data_cpf
+  - data_birth
+  - data_phrase
+  - from_host
+
+slots:
+  data_name:
+    type: text
+    influence_conversation: false
+    auto_fill: false
+  data_cpf:
+    type: text
+    influence_conversation: false
+    auto_fill: false
+  data_birth:
+    type: text
+    influence_conversation: false
+    auto_fill: false
+  data_phrase:
+    type: text
+    influence_conversation: false
+    auto_fill: false
+  handoff_to:
+    type: any
+    influence_conversation: false
+
+responses:
+  utter_inform_datas:
+    - text: "Tudo bem. Então vou realizar algumas perguntas:"
+  utter_ask_data_name:
+    - text: "Qual o seu nome ?"
+  utter_ask_data_cpf:
+    - text: "Qual o número do seu CPF ?"
+  utter_ask_data_birth:
+    - text: "Qual a data do seu aniversário ?"
+  utter_ask_data_phrase:
+    - text: "Qual a sua palavra chave ?"
+  utter_submit:
+    - text: "Ok, tudo certo !  👍"
+  utter_slots_values:
+    - text: "Seu cadastro foi realizado com as seguintes informações:\n
+            - Nome: {data_name}\n
+            - Cpf: {data_cpf}\n
+            - Data nascimento: {data_birth}\n
+            - Palavra chave: {data_phrase}"
+  utter_ask_continue:
+    - text: "Você quer continuar ?"
+  utter_greet:
+    - text: "Olá! Sou seu assistente administrativo."
+  utter_ask_help:
+    - text: "Posso te ajudar com estas opções.\n
+          Qual deseja?\n
+           👇"
+      buttons:
+      - title: Cadastrar seus dados
+        payload: /inform_datas
+      - title: Transferir a ligação para outro canal
+        payload: /inform_handoff
+  utter_handoff:
+    - text: Esta bem, transferindo ...
+
+actions:
+  - validate_register_datas_form
+  - action_handoff
+  - action_handoff_options
+
+forms:
+  register_datas_form:
+    data_name:
+      - type: from_entity
+        entity: data_name
+      - type: from_text
+    data_cpf:
+      - type: from_entity
+        entity: data_cpf
+      - type: from_text    
+    data_birth:
+      - type: from_entity
+        entity: data_birth
+      - type: from_text
+    data_phrase:
+      - type: from_entity
+        entity: data_phrase
+      - type: from_text
+
+session_config:
+  session_expiration_time: 60  # value in minutes
+  carry_over_slots_to_new_session: true

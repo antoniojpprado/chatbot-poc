@@ -1,0 +1,29 @@
+# Standard
+venv
+.DS_Store
+.vscode/
+.history/
+.idea/
+
+# Python
+__pycache__/
+.py
+.pytype/
+
+# Node
+.circleci
+.cache
+build/
+dist/
+node_modules
+yarn-error.log
+
+# Rasa
+credentials.yml
+*.db-*
+rasa.db*
+*.db
+results/
+models/
+chatroom/
+rasa_utils/

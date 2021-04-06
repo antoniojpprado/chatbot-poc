@@ -1,0 +1,55 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - Oi
+    - Ei
+    - Oi bot
+    - Ei bot
+    - Olá
+    - Bom Dia
+    - Oi de novo
+    - Oi pessoal
+    - Oi senhor
+    - oi amigo!
+    - Olá
+    - saudações
+    - Olá pessoal
+    - olá está alguém aí
+    - olá robô
+    - olá
+    - heeey
+    - oi oi
+    - Ei
+    - ei ei
+    - Olá
+    - Oi
+    - Olá
+    - olá
+    - Oi?
+    - hey bot!
+    - Olá amiga
+    
+- intent: request_register_datas
+  examples: |
+    - [maria](data_name)
+    - [paulo](data_name)
+    - [antonio](data_name)
+    - [pedro](data_name)
+    - [rodrigo](data_name)
+    - [48549096172](data_cpf)
+    - [12345678912](data_cpf)
+    - [45678925836](data_cpf)
+    - [11111122233](data_cpf)
+    - [75395145688](data_cpf)
+    - [35745685498](data_cpf)
+    - [22/09/1961](data_birth)
+    - [01/01/1980](data_birth)
+    - [20/02/1977](data_birth)
+    - [31/01/1999](data_birth)
+    - [02/10/2020](data_birth)
+    - [minha frase secreta](data_phrase)
+    - [gosto de cachorro](data_phrase)
+    - [meu filme preferido e rambo](data_phrase)
+    - [o nome da minha filha é luana](data_phrase)
+    - [eu gosto de cinema](data_phrase)

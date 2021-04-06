@@ -1,0 +1,23 @@
+version: "2.0"
+rules:
+  - rule: Greet user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: submit form
+    condition:
+    - active_loop: register_datas_form
+    steps:
+      - action: register_datas_form
+      - active_loop: null
+      - action: utter_submit
+      - action: utter_slots_values
+      - action: utter_ask_help
+
+  - rule: Inform datas
+    steps:
+      - intent: inform_datas
+      - action: utter_inform_datas
+      - action: register_datas_form
+      - active_loop: register_datas_form
