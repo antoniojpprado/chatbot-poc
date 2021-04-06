@@ -2,7 +2,7 @@
 
 <h1
     align="center">
-    <img src="../poc-bot/chatroom/bot.png"
+    <img src="bot.png"
          title="Bot"
          width="100"
          style="vertical-align:middle"
