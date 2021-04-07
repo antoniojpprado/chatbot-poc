@@ -16,8 +16,6 @@
 ## ✅ Sobre
 
 Este documento é uma guia rápido, para a implementação de alguns recursos, a seguir listados:
-<br>
-<br>
 
 ## ✅ Na transferência de canais de atendimento
 
@@ -30,8 +28,6 @@ Este documento é uma guia rápido, para a implementação de alguns recursos, a
   - rule: A intencao de transferencia aciona a saudacao
   - rule: Provide handoff options
   - rule: Execute handoff
-<br>
-<br>
 
 ## ✅ Na utilização de formulário
 
@@ -54,16 +50,12 @@ Este documento é uma guia rápido, para a implementação de alguns recursos, a
 - Em **rules.yml** são criadas as stories para lidar com o submit e os informes do formulário, tal como em:
   - rule: submit form
   - rule: Inform datas
-<br>
-<br>
 
 ## ✅ Para integrar com mídias sociais
 - Devem ser informados, no arquivo ***credentials.yml***, os dados necessários para autenticação e acesso ao canal desejado.
 
 
 - Para o bot acessar uma mídia social, deve estar utlizando um servidor web. Localmente pode-se utlizar o **ngrok**. Veja no README os detalhes sobre sua ativação e aonde postar sua url.
-<br>
-<br>
 
 ## ✅ Fontes de referência:
 
