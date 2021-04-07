@@ -6,7 +6,6 @@ intents:
 - greet
 - help
 - trigger_handoff
-- human_handoff
 - handoff
 
 entities:
