@@ -8,7 +8,7 @@
          style="vertical-align:middle"
     >
 
-    poc-bot
+    chatbot-poc
 
 </h1>
 
